@@ -12,12 +12,20 @@
 
         <v-list>
           <v-list-item to="/">
-            <v-list-item-icon>mdi-home</v-list-item-icon>
-            <v-list-item-title>Index</v-list-item-title>
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Index</v-list-item-title>
+            </v-list-item-content>
           </v-list-item>
           <v-list-item to="/about">
-            <v-list-item-icon>mdi-information-outline</v-list-item-icon>
-            <v-list-item-title>About</v-list-item-title>
+            <v-list-item-icon>
+              <v-icon>mdi-information-outline</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>About</v-list-item-title>
+            </v-list-item-content>
           </v-list-item>
         </v-list>
       </v-menu>
@@ -33,7 +41,7 @@
 
     <v-content>
       <v-container class="fill-height" fluid>
-        <v-row align="center" justify="center">
+        <v-row>
           <v-col>
             <router-view></router-view>
           </v-col>
